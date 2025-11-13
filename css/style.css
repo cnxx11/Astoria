@@ -1,2 +1,6 @@
-<style>
-         body {background-image: url(images/Astoria.png);}
+
+         body {
+            background-image:url(images/Astoria.png);
+            height: 1024px;
+            width: 1440px;
+        }
