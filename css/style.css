@@ -1,6 +1,19 @@
 
-         body {
-            background-image:url(images/Astoria.png);
-            height: 1024px;
-            width: 1440px;
-        }
+body {
+    background-image: url(../images/Astoria.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    color: antiquewhite;
+}
+
+.center-above {
+  position: absolute;
+  top: 30%;     
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  font-size: 40px;
+}
+
