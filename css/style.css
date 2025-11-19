@@ -4,16 +4,26 @@ body {
     background-size: cover;
     background-repeat: repeat;
     background-position: center;
+    max-width: fit-content;
+    max-height: fit-content;
     color: antiquewhite;
 }
 
-.center-above {
-  position: absolute;
-  top: 30%;     
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  color: white;
-  font-size: 40px;
+@font-face {
+    font-family:"DM Sans" ;
+    src: url("../fonts/DMSans-LightItalic.ttf") ;
+}
+
+h1{
+    position:static;
+    text-align: center;
+    transform: translateY(200px);
+}
+
+h3 {
+    position: relative;
+    text-align: center;
+    transform: translateY(200px);
+    font-family:"DM Sans"
 }
 
