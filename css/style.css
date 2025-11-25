@@ -1,11 +1,14 @@
 
+html,body {
+    height: 100%;
+}
+
 body {
     background-image: url(../images/Astoria.png);
     background-size: cover;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-position: center;
-    max-width: fit-content;
-    max-height: fit-content;
+    
     color: antiquewhite;
 }
 
@@ -14,16 +17,83 @@ body {
     src: url("../fonts/DMSans-LightItalic.ttf") ;
 }
 
+@font-face {
+    font-family: "Oooh Baby";
+    src: url("../fonts/OoohBaby-Regular.ttf");
+}
+
 h1{
     position:static;
     text-align: center;
     transform: translateY(200px);
+    font-family: "Oooh Baby";
+    font-size: 50px;
 }
 
 h3 {
-    position: relative;
+    position: static;
     text-align: center;
-    transform: translateY(200px);
-    font-family:"DM Sans"
+    transform: translateY(190px);
+    font-family:"DM Sans";
+    font-size: 16px;
 }
 
+
+.icon {
+    position: absolute;   /* places it over the page */
+    top: 20px;            /* distance from the top */
+    left: 20px;           /* distance from the left */
+    z-index: 999;         /* stay on top of background */
+}
+
+.icon img {
+    width: 60px;          /* control the SIZE of the star */
+    height: auto;         /* keeps proportions */
+    display: block;       /* removes unwanted spacing */
+    transition: transform 0.6s;
+}
+
+.icon:hover {
+    animation: rotate360 1s linear infinite;
+}
+
+@keyframes rotate360 {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.submenu {
+  display: none;          /* hidden initially */
+  position: absolute;     /* relative to wrapper */
+  top: 0;                 /* align with top of icon */
+  left: 70px;             /* appear to the right of icon */
+  background: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  min-width: 120px;
+  z-index: 100;
+  opacity: 0;             /* start invisible for smooth reveal */
+  transform: translateX(-10px); /* slightly shifted left */
+  transition: all 0.3s ease;
+}
+
+/* Show submenu on hover */
+.icon-wrapper:hover .submenu {
+  display: block;
+  opacity: 1;
+  transform: translateX(0); /* slide in smoothly */
+}
+
+/* Submenu links */
+.submenu a {
+  display: block;
+  margin: 6px 0;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.submenu a:hover {
+  text-decoration: underline;
+}
