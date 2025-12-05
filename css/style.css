@@ -25,7 +25,7 @@ body {
 h1{
     position:static;
     text-align: center;
-    transform: translateY(200px);
+    transform: translateY(160px);
     font-family: "Oooh Baby";
     font-size: 50px;
 }
@@ -33,67 +33,94 @@ h1{
 h3 {
     position: static;
     text-align: center;
-    transform: translateY(190px);
+    transform: translateY(160px);
     font-family:"DM Sans";
     font-size: 16px;
 }
 
 
-.icon {
-    position: absolute;   /* places it over the page */
-    top: 20px;            /* distance from the top */
-    left: 20px;           /* distance from the left */
-    z-index: 999;         /* stay on top of background */
+
+.logo-area {
+  position: relative;
+  display: inline-block;
 }
 
-.icon img {
-    width: 60px;          /* control the SIZE of the star */
-    height: auto;         /* keeps proportions */
-    display: block;       /* removes unwanted spacing */
+.logo {
+    position: absolute;
+    top: 0;  /* top-left corner */
+    left: 0;
+    z-index: 999;
+
+    width: 60px;       /* sets size */
+    height: auto;      /* keeps aspect ratio */
+    display: block;
     transition: transform 0.6s;
 }
 
-.icon:hover {
+/* Spin on hover */
+.logo:hover {
     animation: rotate360 1s linear infinite;
 }
 
+/* Spin animation */
 @keyframes rotate360 {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
 
-.submenu {
-  display: none;          /* hidden initially */
-  position: absolute;     /* relative to wrapper */
-  top: 0;                 /* align with top of icon */
-  left: 70px;             /* appear to the right of icon */
-  background: white;
-  padding: 10px 15px;
-  border-radius: 8px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-  min-width: 120px;
-  z-index: 100;
-  opacity: 0;             /* start invisible for smooth reveal */
-  transform: translateX(-10px); /* slightly shifted left */
-  transition: all 0.3s ease;
+.logo-area {
+  position: relative;
+  display: inline-block;
 }
 
-/* Show submenu on hover */
-.icon-wrapper:hover .submenu {
-  display: block;
+.topbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px 10px;
+  position: relative;
+}
+
+.hover-menu {
+  position: absolute;
+  top: 30px;
+  left: 10;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+  z-index: 999;
+}
+
+/* Reveal menu on hover */
+.logo-area:hover .hover-menu {
   opacity: 1;
-  transform: translateX(0); /* slide in smoothly */
+  visibility: visible;
+  transform: translateX(0);
 }
 
-/* Submenu links */
-.submenu a {
-  display: block;
-  margin: 6px 0;
+
+/* --- MAIN MENU ROW --- */
+.menu {
+  list-style: none;
+  display: flex;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  gap: 30px; 
+}
+
+.menu > li > a {
   text-decoration: none;
-  color: black;
-  font-size: 14px;
+  color: antiquewhite;
+  font-size: 20px;
+  padding: 0px 0;
+  font-family: "Dm Sans";
+  font-size: small;
 }
 
-.submenu a:hover {
-  text-decoration: underline;
+.menu a:hover{
+    color: #d7d7d7;
 }
+
+

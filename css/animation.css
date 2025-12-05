@@ -1,0 +1,37 @@
+.cloud{
+    overflow: hidden;
+    z-index: -1;
+}
+.cloud img{
+    animation: cld 20s linear infinite;
+    animation-duration: calc(20s + (var(--i) * 2s));
+    opacity: .6;
+    
+    position: absolute;
+    
+}
+
+@keyframes cld {
+  0% { transform: translateX(-120vw); }
+  100% { transform: translateX(120vw); }
+}
+
+.crystal {
+    width: 200px;
+    top: 50px;
+}
+
+.fluffly{
+    width: 100px;
+    top:200px
+}
+
+.bluecloud{
+    width: 700px; ;
+    top: 400px;
+}
+
+html,body {
+    height: 100%;
+}
+

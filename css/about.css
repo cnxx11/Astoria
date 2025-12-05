@@ -1,0 +1,12 @@
+html,body {
+    height: 100%;
+}
+
+body {
+    background-image: url(../images/sky.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    color: antiquewhite;
+}
