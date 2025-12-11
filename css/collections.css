@@ -193,14 +193,33 @@ h2{
 }
 
 h3 {
-  text-align: left;
+  text-align: center;
   font-size: 30px;
-  margin-top: 200px;
+  margin-top: 70px;
 }
 
-hr{
+p{
+  text-align: center;
+  margin: 150px;
+  margin-top: 50px;
+}
 
-  border: none;               /* remove default border */
-  border-top: 2px dotted #000; /* or the color you want */
-  margin: 40px 0;             /* adjust spacing if needed */
+hr {
+  border: none;
+  border-top: 2px dotted #000;
+  width: 150px;
+  margin: 20px auto;
+}
+
+body {
+  background-image: linear-gradient(rgba(255, 255, 190, 0.2), rgba(255, 255, 188, 0.2)), url(../images/texture.jpg);
+  background-size: cover;      /* makes the image cover the whole screen */
+  background-position: center; /* centers the image */
+  background-repeat: no-repeat; /* prevents tiling */
+}
+
+h4{
+  font-family: "Oooh Baby";
+  font-size: 60px;
+  text-align: center;
 }
