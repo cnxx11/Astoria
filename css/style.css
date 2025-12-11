@@ -124,4 +124,44 @@ h3 {
     color: #d7d7d7;
 }
 
+.cloud-banner {
+  position: absolute;
+  bottom: 5px;        /* bottom-left of page */
+  left: 20px;
+  width: fit-content;  /* container fits the cloud */
+  display: inline-block;
+}
 
+.cloud-image {
+  width: 300px;
+  height: auto;
+  display: block;
+}
+
+.cloud-title {
+  position: absolute;
+  top: 45%;           /* center text on cloud */
+  left: 44%;
+  transform: translate(-50%, -50%);
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  color: white;
+  text-decoration: none; /* remove underline */
+  pointer-events: auto;  /* IMPORTANT: clickable */
+  z-index: 10;
+  transition: 0.25s ease;
+}
+
+
+/* 🔥 Hover effect */
+.cloud-title:hover {
+  color: #ffe9a3;              /* soft yellow highlight */
+  text-shadow: 0 0 5px #fff;  /* glowing */
+  transform: translate(-50%, -50%) scale(1.1);  /* slightly larger */
+}
+
+/* 🟡 "Clicked" effect (active state) */
+.cloud-title:active {
+  transform: translate(-50%, -50%) scale(0.95); /* tap/click feedback */
+  opacity: 0.4;
+}
