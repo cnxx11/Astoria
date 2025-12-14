@@ -60,7 +60,7 @@ h1{
   font-size: 16px;
   font-weight: bold;
   
-  color: rgb(148, 148, 148);
+  color: rgb(200, 254, 208);
   text-decoration: none;
   
   background: rgba(255, 255, 255, 0.1);
@@ -197,7 +197,7 @@ section {
 }
 
 body {
-  background-image: linear-gradient(rgba(15, 115, 182, 0.523), rgba(25, 122, 175, 0.2)), url(../images/texture.jpg);
+  background-image: linear-gradient(rgba(1, 73, 121, 0.658), rgba(38, 94, 108, 0.584)), url(../images/texture.jpg);
   background-size: cover;      /* makes the image cover the whole screen */
   background-position: center; /* centers the image */
   background-repeat: no-repeat; /* prevents tiling */

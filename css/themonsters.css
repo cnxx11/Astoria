@@ -205,7 +205,7 @@ h1{
 }
 
 body {
-  background-image: linear-gradient(rgba(254, 228, 240, 0.589), rgba(253, 209, 230, 0.589)), url(../images/texture.jpg);
+  background-image: linear-gradient(rgba(254, 228, 240, 0.589), rgba(246, 170, 207, 0.589)), url(../images/texture.jpg);
   background-size: cover;      /* makes the image cover the whole screen */
   background-position: center; /* centers the image */
   background-repeat: no-repeat; /* prevents tiling */
