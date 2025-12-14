@@ -27,6 +27,7 @@
 
 body{
     background-color: rgba(254, 228, 240, 0.589);
+    overflow-x: hidden;
 
 }
 
