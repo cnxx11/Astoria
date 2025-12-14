@@ -81,11 +81,6 @@ h1{
 }
 
 .btn {
-  position: relative;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  
   padding: 12px 28px;
   font-size: 16px;
   font-weight: bold;
@@ -93,8 +88,8 @@ h1{
   color: rgb(148, 148, 148);
   text-decoration: none;
   
-  background: rgba(255, 255, 255, 0.1); /* semi-transparent */
-  backdrop-filter: blur(10px);          /* frosted glass effect */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   
@@ -103,14 +98,21 @@ h1{
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+.btn {
+  display: block;          /* ← breaks inline text flow */
+  width: fit-content;
+  margin: 60px auto;       /* ← centers it */
+
+  text-align: center;      /* safety reset */
+}
+
 
 
 .btn:hover {
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-  transform: translateX(-50%) translateY(-3px);
+  transform: translateX(0) translateY(-3px); 
 }
-
 
 .logo-area {
   position: relative;

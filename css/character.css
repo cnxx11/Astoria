@@ -26,6 +26,14 @@ html, body {
     display: block;
 }
 
+h1{
+ 
+   font-family: "Oooh Baby";
+   margin-top: -120px;
+   text-align: center;
+   font-size: 70px;
+   color: rgb(7, 18, 90);
+}
 
 
 .logo-area {
@@ -154,44 +162,70 @@ html, body {
     src: url("../fonts/OoohBaby-Regular.ttf");
 }
 
-h1{
-    transform: translateX(25%) ; 
-   
-    font-size: 100px; 
-    margin-top: -200px;
-    position: static;
+
+
+
+
+.hero {
+  position: relative;      /* anchor for overlay */
+  min-height: 100vh;
 }
 
-h2{
-    font-size: 90px;
-    margin-top: -50px; 
-    transform: translateX(24%);
-    position: static;
+.container {
+  position: relative;
 }
 
+.text-over-image {
+  position: absolute;
+  top: 180px;        /* 🔥 adjust this number */
+  right: 80px;
+  text-align: right;
+  
+}
 
-h3 {
+.text-over-image h1 {
+  font-size: 100px;
+  margin: 0 0 50px 0;
+  line-height: 0.9;
+}
+
+.text-over-image h2 {
+  font-size: 90px;
+  margin-top: 10px;
+  line-height: 0.9;
+}
+
+.text-over-image h1,
+.text-over-image h2 {
+  color: #271f17;   /* ← change this */
+}
+
+h3,p {
   text-align: center;
-  font-size: 30px;
-  margin-top: 0px;
-  transform: translateY(190%);
+  margin-top: 20px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 p{
-  text-align: center;
-  margin: 170px;
-  margin-top: 0px;
-  transform: translateY(150%);
-
+ line-height: 1.6;
+font-family:"DM Sans" ;
 }
+
+h3{
+  font-size: 40px;
+  font-family: "DM Sans";
+}
+
 
 hr {
   border: none;
-  border-top: 2px dotted #000;
+  border-top: 2px dotted #543d29;
   width: 150px;
-  margin: 0px auto;
-
+  margin: 80px auto;
 }
+
+
 
 body {
   background-image: linear-gradient(rgba(255, 255, 190, 0.2), rgba(255, 255, 188, 0.2)), url(../images/texture.jpg);
@@ -249,6 +283,7 @@ h4{
   margin-top: 10px;
   font-size: 14px;
   color: #333;
+  font-family: "DM Sans";
 }
 
 /* Optional: make it responsive on small screens */
